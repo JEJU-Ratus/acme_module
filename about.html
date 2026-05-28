@@ -145,16 +145,15 @@
         <a href="#" class="btn btn-primary big">sign up for free</a>
       </section>
     </main>
-    <footer class="inner-pd d-flex flex-column align-items-center g-1">
-      <p>&copy; 2014. All rights reserved. Questions?</p>
-      <p>Email us at <a href="#" class="text-link">office@product.com</a></p>
-    </footer>
+    <footer class="inner-pd d-flex flex-column align-items-center g-1" id="footer"></footer>
     <script src="js/main.js"></script>
     <script src="js/about.js"></script>
     <script type="module">
       import { renderHeader } from "./js/module/header.js";
+      import { renderFooter } from "./js/module/footer.js";
       document.addEventListener("DOMContentLoaded", () => {
         renderHeader();
+        renderFooter();
       });
     </script>
   </body>
